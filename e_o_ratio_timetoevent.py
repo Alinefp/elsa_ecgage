@@ -6,7 +6,7 @@ from lifelines import CoxPHFitter, KaplanMeierFitter
 import pandas as pd
 
 #%%
-# Load your data (replace 'your_data.csv' with your actual data file)
+# Load your data 
 data = pd.read_stata('/Users/af955/Library/CloudStorage/OneDrive-YaleUniversity/ELSA_Databases/ecg_age.dta')
 
 # Define models with their respective variables

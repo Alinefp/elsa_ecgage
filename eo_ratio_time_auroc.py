@@ -26,8 +26,8 @@ models = {
 time_to_event = 's_deratero_mes'  
 event_occurred = 's_deratero'  
 
-# Filter to include only data within the 5-year window and drop NaNs
-data = data[(data[time_to_event] <= 5) & (data[event_occurred].notna())].dropna()
+# Filter to drop NaNs
+data = data[(data[event_occurred].notna())].dropna()
 
 # Standardize predictor variables
 scaler = StandardScaler()
